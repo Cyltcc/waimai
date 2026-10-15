@@ -1,0 +1,191 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "",//设置页面标题文字
+				"enablePullDownRefresh": false, //开启下拉刷新事件
+				"app-plus" : {  
+					"titleNView" : {  
+						// 导航栏样式。"default"-默认样式；"transparent"-滚动透明渐变；"float"-悬浮导航栏。
+						"type": "default",
+						"buttons" : [  
+							{
+								"text" : "\ue62e",  
+								"color":"#007AFF",
+								"fontSize" : "20px",  
+								"fontSrc":"/static/ttf/address.ttf",
+								"float":"left"
+							},
+							{
+								"text" : "浙江",  
+								"color":"#000000",
+								"fontWeight":"bold",
+								"fontSize" : "18px",  
+								"float":"left"
+							}
+						]  
+					}  
+				}  
+			}
+		},
+		{
+			"path": "pages/order/order-list",
+			"style": {
+				"navigationBarTitleText": "我的订单"
+			}
+		},
+		{
+			"path": "pages/me/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/order/order-detail",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		},
+		{
+			"path": "pages/me/about",
+			"style": {
+				"navigationBarTitleText": "关于我们"
+			}
+		},
+		{
+			"path": "pages/me/collection",
+			"style": {
+				"navigationBarTitleText": "我的收藏"
+			}
+		},
+		{
+			"path": "pages/me/personal",
+			"style": {
+				"navigationBarTitleText": "个人资料"
+			}
+		},
+		{
+			"path": "pages/me/problem",
+			"style": {
+				"navigationBarTitleText": "问题反馈"
+			}
+		},
+		{
+			"path": "pages/store/index",
+			"style": {
+				"navigationBarTitleText": "",//设置页面标题文字
+				"enablePullDownRefresh": true, //开启下拉刷新事件
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"app-plus" : {  
+					"titleNView" : {  
+						// 导航栏样式。"default"-默认样式；"transparent"-滚动透明渐变；"float"-悬浮导航栏。
+						"type": "default",
+						"searchInput":{
+							"align": "left",
+							"disabled":true,
+							"placeholder": "搜索",
+							// "placeholderColor":"#007AFF",
+							"borderRadius":"20px",
+							"backgroundColor": "#f0f0f0"
+						},
+						"buttons" : [
+							{
+								"text" : "\ue75d",  
+								"color":"#3b3f3c",
+								"fontSize" : "20px",  
+								"fontSrc":"/static/ttf/share.ttf",
+								"float":"right"
+							}
+						]  
+					}  
+				}  
+			}
+		},
+		{
+			"path": "pages/store/pay",
+			"style": {
+				"navigationBarTitleText": "确认订单"
+			}
+		},
+		{
+			"path": "pages/store/address",
+			"style": {
+				"navigationBarTitleText": "收货地址"
+			}
+		},
+		{
+			"path": "pages/store/edit-address",
+			"style": {
+				"navigationBarTitleText": "修改收货地址"
+			}
+		},
+		{
+			"path": "pages/store/create-address",
+			"style": {
+				"navigationBarTitleText": "新增收货地址"
+			}
+		},
+		{
+			"path": "pages/index/goods-detail",
+			"style": {
+				"navigationBarTitleText": "商品详情"
+			}
+		},
+		{
+			"path": "pages/index/search",
+			"style": {
+				"navigationBarTitleText": "",//设置页面标题文字
+				"enablePullDownRefresh": true, //开启下拉刷新事件
+				"app-plus" : {  
+					"titleNView" : {  
+						// 导航栏样式。"default"-默认样式；"transparent"-滚动透明渐变；"float"-悬浮导航栏。
+						"type": "float",
+						"searchInput":{
+							"align": "left",
+							"placeholder": "搜索",
+							// "placeholderColor":"#007AFF",
+							"borderRadius":"20px",
+							"backgroundColor": "#fff"
+						}
+					}  
+				}  
+			}
+		}
+	],
+	"tabBar": {
+	  "color": "#7A7E83",
+	  "selectedColor": "#007AFF",
+	  "borderStyle": "black",
+	  "backgroundColor": "#ffffff",
+	  "list": [
+	    {
+	      "pagePath": "pages/index/index",
+	      "iconPath": "/static/shouye.png",
+	      "selectedIconPath": "/static/shouyefill.png",
+	      "text": "首页"
+	    },
+		{
+		  "pagePath": "pages/order/order-list",
+		  "iconPath": "/static/dingdan-xianxing.png",
+		  "selectedIconPath": "/static/dingdan-mianxing.png",
+		  "text": "订单"
+		 },
+	    {
+	      "pagePath": "pages/me/index",
+	      "iconPath": "/static/wode-xianxing.png",
+	      "selectedIconPath": "/static/wode-mianxing.png",
+		  "text": "我的"
+	     }
+	  ]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#ffffff"
+	}
+}
